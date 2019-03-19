@@ -1,7 +1,7 @@
 {
-  "name": "servertest01",
-  "version": "0.1.0",
-  "description": "Server Test 01",
+  "name": "ihsservertest",
+  "version": "1.0.0",
+  "description": "IHS Markit - Server Test",
   "private": true,
   "main": "index.js",
   "scripts": {
