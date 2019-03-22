@@ -4,8 +4,8 @@ const cors = require('cors');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const routes = require('./src/routes');
-
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 
@@ -32,4 +32,4 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(`${__dirname}/dist/index.html`));
 });
 
-app.listen(8080, () => console.log('Listening on port 8080'));
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
